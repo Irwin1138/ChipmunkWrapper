@@ -1,0 +1,40 @@
+Here is my C++ wrapper for Chipmunk Physics.  This is a very thin
+layer above the chipmunk itself, mostly for convenience of automatic
+construction\destruction.
+
+Features:
+ * chipmunk in C++ style
+ * Kustom Accessorz functions // not a typo, intended :P
+ * use of powerful Boost's smart pointers (the wrapper is
+   based upon the smart pointers, so if you dont like boost
+   or cant use it then the wrapper is probably useless for you)
+ * inline implementation in headers for minimal performance
+   impact of the wrapper and convenience
+
+wrapped structures(with corresponding functions):
+cpBody
+cpShape
+cpSpace
+cpJoint
+cpBB
+
+IMPORTANT NOTE: Be sure to place include safeguards to chipmunk.h!
+
+This wrapper is intended for free public use, there arent any
+limitations, so feel free to download, modify, use it however you like
+8)
+
+If you have any useful suggestions\feature
+request\modifications\patches post them here, and I will update my
+code.
+
+I did NOT test every piece of the code, so there could be a few
+bugs. But everything I did test is working. I'll be glad to hear about
+the bugs if you find any 8)
+
+The wrapper has its most use in simple games\prototypes\tests where
+you dont need a complicated physics framework for the chipmunk
+physics.
+
+The wrapper 'assumes' chipmunk version 4.0.2, which means I didn't
+test it with other versions.
